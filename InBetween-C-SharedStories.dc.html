@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Caveat:wght@500;700&family=Patrick+Hand&family=Amiri:wght@700&display=swap" rel="stylesheet"><style>body{margin:0}a{color:inherit;text-decoration:none}a:hover{opacity:.8}input,textarea,button{font:inherit}.dv-turn{padding:40px 44px 32px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#1a1a1a;color:#fff;border-radius:4px}.dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}.dv-opts{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.08);color:#1a1a1a;border-radius:5px}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 13px/1.3 system-ui,sans-serif;color:rgba(0,0,0,.6)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);overflow:hidden}.dv-opt:target .dv-oid{background:#2a78d6;color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 system-ui,sans-serif;color:rgba(0,0,0,.5)}</style></helmet>
+<section class="dv-turn" id="t1" style="padding:{{ pad }}">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-thd"><a class="dv-tid" href="#t1">C</a><span class="dv-tname">Direction C — Shared Stories · bold &amp; expressive · leads with the pink of the biscuits and Instagram</span></div>
+<div style="max-width:1280px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin:0 0 36px;font:13px/1.55 system-ui,sans-serif;color:rgba(0,0,0,.7)">
+<div><div style="font-weight:600;color:#1a1a1a;margin-bottom:6px">Idea</div>The InBetween Instagram turned into a website: loud, warm and fun. A giant wordmark, polaroid snaps with handwritten captions, poster-style event cards and the chalkboard brunch menu, recreated.</div>
+<div><div style="font-weight:600;color:#1a1a1a;margin-bottom:6px">Type &amp; colour</div>Bricolage Grotesque (chunky, friendly) + Caveat for the handwriting. Biscuit pink #E79CBC leads, with mint, butter yellow and slate-black ink. Wordmark in white on pink, black elsewhere.</div>
+<div><div style="font-weight:600;color:#1a1a1a;margin-bottom:6px">Layout</div>Big chunky tiles, stickers, rotated photos, and a playful 30-second cake planner that writes the brief for the customer. Placeholders as in A and B: hours, phone, email, dates and story copy to confirm.</div>
+</div>
+</sc-if>
+<div class="dv-opts">
+
+<sc-if value="{{ show.C1 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C1">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C1">C1</a>Home · desktop</div></sc-if>
+<div class="dv-card" style="width:1280px;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="background:#E79CBC;position:relative;overflow:hidden;height:800px">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:24px 40px;position:relative;z-index:4">
+<span style="background:#fff;border-radius:40px;padding:12px 20px;font-size:15px;font-weight:600">Open today · 9–5</span>
+<div style="display:flex;gap:4px;background:#fff;border-radius:40px;padding:6px;font-size:15px;font-weight:600"><a href="#C2" style="padding:10px 18px">Cakes</a><a href="#C1" style="padding:10px 18px">Catering</a><a href="#C3" style="padding:10px 18px">Workshops</a><a href="#C1" style="padding:10px 18px">Menu</a><a href="#C4" style="padding:10px 18px">Our story</a></div>
+<a href="#C2" style="background:#232A27;color:#fff;padding:16px 24px;border-radius:40px;font-size:15px;font-weight:600">Plan a cake →</a>
+</div>
+<img src="assets/cake-strawberry.png" alt="" style="position:absolute;left:60px;top:150px;width:250px;height:300px;object-fit:cover;border:10px solid #fff;border-bottom-width:44px;transform:rotate(-8deg);box-shadow:0 18px 40px rgba(0,0,0,.18);z-index:1">
+<img src="assets/flatbread.png" alt="" style="position:absolute;right:70px;top:130px;width:240px;height:280px;object-fit:cover;border:10px solid #fff;border-bottom-width:44px;transform:rotate(7deg);box-shadow:0 18px 40px rgba(0,0,0,.18);z-index:1">
+<img src="assets/biscuits.png" alt="" style="position:absolute;right:110px;bottom:-30px;width:210px;height:230px;object-fit:cover;border:10px solid #fff;border-bottom-width:38px;transform:rotate(-4deg);box-shadow:0 18px 40px rgba(0,0,0,.18);z-index:3">
+<div style="position:absolute;left:250px;bottom:70px;width:170px;height:170px;border-radius:50%;background:#BFE3D3;display:flex;align-items:center;justify-content:center;text-align:center;transform:rotate(-12deg);font-family:Caveat,cursive;font-weight:700;font-size:26px;line-height:1.05;z-index:3;padding:20px;box-sizing:border-box">made fresh in store, every morning</div>
+<div style="position:absolute;left:0;right:0;top:190px;display:flex;flex-direction:column;align-items:center;z-index:2;pointer-events:none;color:#fff">
+<div style="font-family:Caveat,cursive;font-weight:700;font-size:290px;line-height:.8;letter-spacing:-.01em">inbetween</div>
+<div style="font-family:'Patrick Hand',cursive;font-size:34px;line-height:1.05;margin:4px 0 0 220px;display:flex;flex-direction:column"><span>baked moments</span><span style="margin-left:40px">shared stories</span></div>
+<p style="margin:30px 0 0;font-size:22px;font-weight:600;max-width:560px;text-align:center;line-height:1.35;color:#232A27">Syrian bakes, specialty brews &amp; a whole lot of cake — on Mansfield Road, Nottingham.</p>
+</div>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:22px 0;overflow:hidden;white-space:nowrap;font-size:30px;font-weight:800;text-transform:uppercase;display:flex;gap:28px;justify-content:center"><span>Baked moments</span><span style="color:#E79CBC">✶</span><span>Shared stories</span><span style="color:#E79CBC">✶</span><span>Cakes to order</span><span style="color:#E79CBC">✶</span><span>Catering</span><span style="color:#E79CBC">✶</span><span>Workshops</span><span style="color:#E79CBC">✶</span><span>Mansfield Road</span></div>
+<div style="padding:100px 40px">
+<div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:40px"><h2 style="font-size:96px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">What are<br>you after?</h2><span style="font-family:Caveat,cursive;font-size:32px;font-weight:700;transform:rotate(-3deg);max-width:340px;text-align:right;line-height:1.1">no checkout — just tell us what you need and we'll get back to you ↓</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+<sc-for list="{{ offers }}" as="o" hint-placeholder-count="4">
+<a href="{{ o.href }}" style="background:{{ o.tone }};border:2px solid #232A27;border-radius:28px;overflow:hidden;display:grid;grid-template-columns:1.1fr 1fr;min-height:340px"><div style="padding:34px;display:flex;flex-direction:column;justify-content:space-between"><div style="display:flex;flex-direction:column;gap:12px"><span style="font-size:46px;font-weight:800;letter-spacing:-.03em;line-height:.95">{{ o.name }}</span><span style="font-size:17px;line-height:1.45">{{ o.desc }}</span></div><span style="align-self:flex-start;background:#232A27;color:#fff;border-radius:40px;padding:11px 18px;font-size:15px;font-weight:600">{{ o.cta }} →</span></div><img src="{{ o.img }}" alt="{{ o.name }}" style="width:100%;height:100%;object-fit:cover;display:block;border-left:2px solid #232A27"></a>
+</sc-for>
+</div>
+</div>
+<div style="padding:0 40px 100px">
+<div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:40px"><h2 style="font-size:96px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">From the counter</h2><a href="#" style="font-size:17px;font-weight:600;border-bottom:2px solid #232A27;padding-bottom:2px">@inbetween.notts on Instagram →</a></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px">
+<sc-for list="{{ gallery }}" as="g" hint-placeholder-count="6"><div style="background:#fff;padding:12px 12px 16px;box-shadow:0 10px 30px rgba(35,42,39,.12);transform:rotate({{ g.rot }})"><img src="{{ g.img }}" alt="{{ g.cap }}" style="width:100%;aspect-ratio:1;object-fit:cover;display:block"><div style="font-family:Caveat,cursive;font-size:28px;font-weight:700;padding-top:10px">{{ g.cap }}</div></div></sc-for>
+</div>
+</div>
+<div style="padding:0 40px 100px">
+<div style="background:#2F3532;border:18px solid #3B403D;border-radius:8px;padding:50px 60px;color:#F4F1EA;box-shadow:0 20px 50px rgba(0,0,0,.2);display:flex;justify-content:space-between;align-items:center;gap:40px;flex-wrap:wrap">
+<div style="display:flex;flex-direction:column;gap:8px"><span style="font-family:Caveat,cursive;font-size:64px;font-weight:500;line-height:1;color:#BFE3D3">Our Breakfast &amp; Brunch Menu</span><span style="font-family:Caveat,cursive;font-size:30px;color:#EFA46C">small plates, flatbreads, coffee &amp; more — see what's on today</span></div>
+<a href="#" style="background:#E79CBC;color:#232A27;padding:16px 26px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:600">Download menu PDF ↓</a>
+</div>
+</div>
+<div style="padding:0 40px 100px">
+<div style="display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:44px"><h2 style="font-size:96px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">What's on</h2><a href="#C3" style="font-size:18px;font-weight:700;border-bottom:3px solid #232A27;padding-bottom:4px">All workshops &amp; events →</a></div>
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px">
+<sc-for list="{{ nextEvents }}" as="e" hint-placeholder-count="2"><div style="background:{{ e.bg }};color:{{ e.fg }};border:2px solid #232A27;border-radius:10px;padding:34px 30px;display:flex;flex-direction:column;gap:14px;transform:rotate({{ e.rot }})"><div style="display:flex;align-items:baseline;gap:12px;color:{{ e.acc }}"><span style="font-size:96px;font-weight:800;line-height:.85;letter-spacing:-.04em">{{ e.d }}</span><span style="font-size:28px;font-weight:800">{{ e.m }}</span></div><span style="font-size:36px;font-weight:800;line-height:1;letter-spacing:-.02em">{{ e.t }}</span><span style="font-size:17px">{{ e.meta }}</span><a href="#C3" style="font-family:Caveat,cursive;font-size:30px;font-weight:700;color:{{ e.acc }}">{{ e.cta }} →</a></div></sc-for>
+</div>
+</div>
+<div style="background:#BFE3D3;padding:90px 40px;display:grid;grid-template-columns:minmax(0,1fr) 640px;gap:56px">
+<div style="display:flex;flex-direction:column;gap:20px"><h2 style="font-size:88px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">Say hello!</h2><span style="font-family:Caveat,cursive;font-size:32px;font-weight:700;transform:rotate(-2deg);align-self:flex-start">we reply within two days, promise</span><div style="display:flex;flex-direction:column;gap:6px;font-size:19px;font-weight:600;margin-top:20px"><span>0115 496 0000</span><span>hello@inbetweennotts.co.uk</span><span>@inbetween.notts</span></div></div>
+<div style="background:#FFF8F1;border:2px solid #232A27;border-radius:28px;padding:34px">
+<sc-if value="{{ homeOpen }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;flex-direction:column;gap:18px">
+<span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em">I'm asking about…</span>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ homeChips }}" as="ch" hint-placeholder-count="4"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:9px 16px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><input placeholder="Name" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff"><input placeholder="Email or phone" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff"></div>
+<textarea rows="3" placeholder="Tell us everything…" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff;resize:none"></textarea>
+<button type="button" onClick="{{ homeSend }}" style="background:#E79CBC;color:#232A27;border:2px solid #232A27;padding:15px 22px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:800;cursor:pointer;align-self:flex-start">Send it →</button>
+</div>
+</sc-if>
+<sc-if value="{{ homeSent }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:12px;padding:30px 0"><span style="font-size:56px;font-weight:800;letter-spacing:-.03em;line-height:.95">Yay — got it!</span><span style="font-size:17px">We'll be in touch about your {{ homeType }} enquiry.</span><button type="button" onClick="{{ homeReset }}" style="background:none;border:0;padding:0;font-size:15px;font-weight:600;text-decoration:underline;cursor:pointer;align-self:flex-start">Send another</button></div></sc-if>
+</div>
+</div>
+<div style="background:#E79CBC;padding:90px 40px;display:grid;grid-template-columns:minmax(0,1fr) 520px;gap:50px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:22px">
+<sc-if value="{{ arabic }}" hint-placeholder-val="{{ true }}"><span dir="rtl" style="font-family:Amiri,serif;font-size:48px;font-weight:700;align-self:flex-start;line-height:1">أهلاً وسهلاً</span></sc-if>
+<h2 style="font-size:84px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">536A Mansfield Rd,<br>Nottingham</h2>
+<div style="display:flex;gap:36px;font-size:19px;font-weight:600"><span>Tue–Sat 9–5</span><span>Sun 10–4</span><span>Mon closed</span></div>
+<div style="display:flex;gap:12px"><a href="#" style="background:#232A27;color:#fff;padding:16px 24px;border-radius:40px;font-size:16px;font-weight:600">Get directions</a><a href="#" style="background:#fff;border:2px solid #232A27;padding:14px 24px;border-radius:40px;font-size:16px;font-weight:600">Call 0115 496 0000</a></div>
+</div>
+<div style="height:340px;border:2px solid #232A27;border-radius:28px;background:repeating-linear-gradient(135deg,#F1B6CE 0 8px,#ECA8C4 8px 16px);display:flex;align-items:center;justify-content:center;font:13px ui-monospace,Menlo,monospace">map embed — 536A Mansfield Rd</div>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:40px;display:flex;justify-content:space-between;align-items:center"><div style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:52px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:14px;margin:-6px 0 0 44px">baked moments · shared stories</span></div><span style="font-size:15px">hello@inbetweennotts.co.uk · 0115 496 0000</span><span style="display:flex;gap:24px;font-size:15px"><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">Privacy</a></span></div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ show.C2 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C2">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C2">C2</a>Cakes to order · desktop</div></sc-if>
+<div class="dv-card" style="width:1280px;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:20px 40px;background:#FFF8F1;border-bottom:2px solid #232A27">
+<a href="#C1" style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:44px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:13px;margin:-6px 0 0 36px">baked moments · shared stories</span></a>
+<div style="display:flex;gap:4px;border:2px solid #232A27;border-radius:40px;padding:5px;font-size:15px;font-weight:600"><a href="#C2" style="padding:9px 18px;background:#E79CBC;border-radius:40px">Cakes</a><a href="#C7" style="padding:9px 18px">Catering</a><a href="#C3" style="padding:9px 18px">Workshops</a><a href="#C1" style="padding:9px 18px">Menu</a><a href="#C4" style="padding:9px 18px">Our story</a></div>
+<a href="#C2" style="background:#232A27;color:#fff;padding:15px 22px;border-radius:40px;font-size:15px;font-weight:600">Plan a cake →</a>
+</div>
+<div style="position:relative;padding:90px 40px 110px;overflow:hidden">
+<h1 style="font-size:210px;font-weight:800;line-height:.82;letter-spacing:-.055em;margin:0;position:relative;z-index:2">Cakes<br>to order.</h1>
+<p style="font-size:22px;line-height:1.45;margin:34px 0 0;max-width:480px;font-weight:600;position:relative;z-index:2">Birthdays, weddings, Eid, baby showers, or just because. Tell us your idea — we'll bake it and quote it personally.</p>
+<img src="assets/cake-pink.png" alt="" style="position:absolute;right:260px;top:60px;width:300px;height:360px;object-fit:cover;border:10px solid #fff;border-bottom-width:44px;transform:rotate(6deg);box-shadow:0 18px 40px rgba(0,0,0,.15);z-index:1">
+<img src="assets/cake-strawberry.png" alt="" style="position:absolute;right:50px;top:260px;width:280px;height:330px;object-fit:cover;border:10px solid #fff;border-bottom-width:44px;transform:rotate(-5deg);box-shadow:0 18px 40px rgba(0,0,0,.15);z-index:3">
+<div style="position:absolute;right:470px;bottom:60px;background:#F3D9A4;border:2px solid #232A27;border-radius:50%;width:160px;height:160px;display:flex;align-items:center;justify-content:center;text-align:center;font-family:Caveat,cursive;font-weight:700;font-size:26px;line-height:1.05;transform:rotate(-10deg);z-index:4;padding:18px;box-sizing:border-box">every cake quoted personally</div>
+</div>
+<div style="background:#E79CBC;padding:90px 40px;border-top:2px solid #232A27;border-bottom:2px solid #232A27">
+<h2 style="font-size:80px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 44px">What we bake</h2>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px">
+<sc-for list="{{ cakeTypes }}" as="c" hint-placeholder-count="6"><div style="background:#fff;padding:12px 12px 18px;transform:rotate({{ c.rot }});box-shadow:0 10px 30px rgba(35,42,39,.15)"><sc-if value="{{ c.img }}" hint-placeholder-val="{{ true }}"><img src="{{ c.img }}" alt="{{ c.name }}" style="width:100%;aspect-ratio:1;object-fit:cover;display:block"></sc-if><sc-if value="{{ c.ph }}" hint-placeholder-val="{{ false }}"><div style="aspect-ratio:1;background:repeating-linear-gradient(135deg,#F3E6DA 0 8px,#FAF0E6 8px 16px);display:flex;align-items:center;justify-content:center;font:12px ui-monospace,Menlo,monospace;color:#6F6560">{{ c.ph }}</div></sc-if><div style="padding:14px 6px 0;display:flex;flex-direction:column;gap:6px"><span style="font-size:26px;font-weight:800;letter-spacing:-.02em">{{ c.name }}</span><span style="font-size:15px;line-height:1.5">{{ c.desc }}</span></div></div></sc-for>
+</div>
+</div>
+<div style="padding:100px 40px">
+<h2 style="font-size:80px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 44px">Easy as 1, 2, 3, 4</h2>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px">
+<sc-for list="{{ steps }}" as="s" hint-placeholder-count="4"><div style="background:{{ s.tone }};border:2px solid #232A27;border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:14px;min-height:280px"><span style="font-size:110px;font-weight:800;line-height:.8;letter-spacing:-.05em">{{ s.n }}</span><span style="font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:1.05">{{ s.t }}</span><span style="font-size:16px;line-height:1.5">{{ s.d }}</span></div></sc-for>
+</div>
+</div>
+<div style="background:#BFE3D3;padding:90px 40px;border-top:2px solid #232A27;display:grid;grid-template-columns:minmax(0,1fr) 640px;gap:56px">
+<div style="display:flex;flex-direction:column;gap:22px">
+<h2 style="font-size:88px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">Plan your cake in 30 seconds.</h2>
+<span style="font-family:Caveat,cursive;font-size:32px;font-weight:700;transform:rotate(-2deg);align-self:flex-start">no payment, no pressure — we reply with a quote</span>
+<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;max-width:520px"><sc-for list="{{ flavours }}" as="f" hint-placeholder-count="8"><span style="background:#FFF8F1;border:2px solid #232A27;border-radius:40px;padding:8px 14px;font-size:15px;font-weight:600">{{ f }}</span></sc-for></div>
+<span style="font-size:15px">Our flavours ↑ — plus seasonal specials.</span>
+</div>
+<div style="background:#FFF8F1;border:2px solid #232A27;border-radius:28px;padding:36px">
+<sc-if value="{{ cOpen }}" hint-placeholder-val="{{ true }}">
+<div style="display:flex;flex-direction:column;gap:22px">
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em">1 · What's the occasion?</span><div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ occChips }}" as="ch" hint-placeholder-count="6"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:9px 16px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em">2 · How many people?</span><div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ servChips }}" as="ch" hint-placeholder-count="4"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:9px 16px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div></div>
+<div style="display:flex;flex-direction:column;gap:10px"><span style="font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:.08em">3 · Favourite flavour</span><div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ flavChips }}" as="ch" hint-placeholder-count="4"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:9px 16px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px"><input type="date" style="border:2px solid #232A27;border-radius:14px;padding:12px 14px;font-size:15px;background:#fff"><input placeholder="Name" style="border:2px solid #232A27;border-radius:14px;padding:12px 14px;font-size:15px;background:#fff"><input placeholder="Email or phone" style="border:2px solid #232A27;border-radius:14px;padding:12px 14px;font-size:15px;background:#fff"></div>
+<div style="background:#E79CBC;border:2px solid #232A27;border-radius:18px;padding:18px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px"><span style="font-family:Caveat,cursive;font-size:28px;font-weight:700;line-height:1.1">{{ cSummary }}</span><button type="button" onClick="{{ cSend }}" style="background:#232A27;color:#fff;border:0;padding:15px 22px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap">Send to InBetween →</button></div>
+</div>
+</sc-if>
+<sc-if value="{{ cSent }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:16px;padding:60px 10px;align-items:flex-start"><span style="font-size:64px;font-weight:800;letter-spacing:-.03em;line-height:.95">Yay — got it!</span><span style="font-family:Caveat,cursive;font-size:30px;font-weight:700">{{ cSummary }}</span><span style="font-size:17px">We'll reply with ideas and a quote within two days.</span><button type="button" onClick="{{ cReset }}" style="background:none;border:0;padding:0;font-size:15px;font-weight:600;text-decoration:underline;cursor:pointer">Plan another</button></div></sc-if>
+</div>
+</div>
+<div style="padding:100px 40px">
+<h2 style="font-size:80px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 40px">Questions we get a lot</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px">
+<sc-for list="{{ faqs }}" as="q" hint-placeholder-count="4"><div style="display:flex;flex-direction:column;gap:10px"><span style="align-self:flex-start;background:#232A27;color:#fff;border-radius:24px 24px 24px 4px;padding:16px 22px;font-size:20px;font-weight:600">{{ q.q }}</span><span style="align-self:flex-end;background:#F3D9A4;border:2px solid #232A27;border-radius:24px 24px 4px 24px;padding:16px 22px;font-size:16px;line-height:1.5;max-width:480px">{{ q.a }}</span></div></sc-for>
+</div>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:40px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:Caveat,cursive;font-weight:700;font-size:48px;line-height:1">inbetween</span><span style="font-size:15px">536A Mansfield Rd · Tue–Sat 9–5 · Sun 10–4</span><span style="font-size:15px">0115 496 0000 · hello@inbetweennotts.co.uk</span></div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ show.C3 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C3">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C3">C3</a>Workshops &amp; events · desktop</div></sc-if>
+<div class="dv-card" style="width:1280px;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:2px solid #232A27">
+<a href="#C1" style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:44px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:13px;margin:-6px 0 0 36px">baked moments · shared stories</span></a>
+<div style="display:flex;gap:4px;border:2px solid #232A27;border-radius:40px;padding:5px;font-size:15px;font-weight:600"><a href="#C2" style="padding:9px 18px">Cakes</a><a href="#C7" style="padding:9px 18px">Catering</a><a href="#C3" style="padding:9px 18px;background:#F3D9A4;border-radius:40px">Workshops</a><a href="#C1" style="padding:9px 18px">Menu</a><a href="#C4" style="padding:9px 18px">Our story</a></div>
+<a href="#C2" style="background:#232A27;color:#fff;padding:15px 22px;border-radius:40px;font-size:15px;font-weight:600">Plan a cake →</a>
+</div>
+<div style="background:#F3D9A4;padding:90px 40px 100px;border-bottom:2px solid #232A27;display:grid;grid-template-columns:minmax(0,1fr) 440px;gap:40px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:26px"><h1 style="font-size:170px;font-weight:800;line-height:.82;letter-spacing:-.055em;margin:0">Come bake with us.</h1><p style="font-size:22px;line-height:1.45;margin:0;max-width:520px;font-weight:600">Workshops, parties and long brunches around our big marble table — and our stall at Nottingham's markets.</p></div>
+<div style="position:relative;height:460px"><img src="assets/cafe-moment.png" alt="" style="position:absolute;left:20px;top:0;width:300px;height:360px;object-fit:cover;border:10px solid #fff;border-bottom-width:44px;transform:rotate(5deg);box-shadow:0 18px 40px rgba(0,0,0,.15)"><span style="position:absolute;left:0;bottom:30px;background:#E79CBC;border:2px solid #232A27;border-radius:40px;padding:12px 20px;font-family:Caveat,cursive;font-weight:700;font-size:28px;transform:rotate(-6deg)">max 8 people — cosy!</span></div>
+</div>
+<div style="padding:100px 40px">
+<div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:44px"><h2 style="font-size:96px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">What's on</h2><span style="font-family:Caveat,cursive;font-size:30px;font-weight:700;transform:rotate(-2deg)">new dates go up on @inbetween.notts first</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px">
+<sc-for list="{{ events }}" as="e" hint-placeholder-count="3"><div style="background:{{ e.bg }};color:{{ e.fg }};border:2px solid #232A27;border-radius:10px;padding:34px 30px;display:flex;flex-direction:column;gap:18px;min-height:460px;transform:rotate({{ e.rot }});box-shadow:0 14px 30px rgba(35,42,39,.15)"><span style="font-size:14px;font-weight:600;letter-spacing:.2em">COME JOIN US ✶</span><div style="display:flex;align-items:baseline;gap:12px"><span style="font-size:130px;font-weight:800;line-height:.8;letter-spacing:-.05em">{{ e.d }}</span><span style="font-size:30px;font-weight:800">{{ e.m }}</span></div><span style="font-size:38px;font-weight:800;line-height:1;letter-spacing:-.03em">{{ e.t }}</span><span style="font-size:16px;font-weight:600">{{ e.meta }}</span><span style="margin-top:auto;font-family:Caveat,cursive;font-weight:700;font-size:30px;color:{{ e.acc }}">{{ e.cta }} →</span></div></sc-for>
+</div>
+</div>
+<div style="padding:0 40px 100px">
+<h2 style="font-size:80px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 40px">Workshops</h2>
+<div style="display:flex;flex-direction:column;gap:16px">
+<sc-for list="{{ workshops }}" as="w" hint-placeholder-count="4"><div style="background:{{ w.tone }};border:2px solid #232A27;border-radius:28px;overflow:hidden;display:grid;grid-template-columns:240px minmax(0,1fr) 220px 200px;align-items:center;gap:32px;padding-right:28px"><sc-if value="{{ w.img }}" hint-placeholder-val="{{ true }}"><img src="{{ w.img }}" alt="" style="width:240px;height:160px;object-fit:cover;display:block;border-right:2px solid #232A27"></sc-if><sc-if value="{{ w.ph }}" hint-placeholder-val="{{ false }}"><div style="width:240px;height:160px;border-right:2px solid #232A27;background:repeating-linear-gradient(135deg,#EBCF97 0 8px,#F3D9A4 8px 16px);display:flex;align-items:center;justify-content:center;font:12px ui-monospace,Menlo,monospace">{{ w.ph }}</div></sc-if><span style="font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:.95">{{ w.name }}</span><span style="font-size:16px;line-height:1.45">{{ w.desc }}</span><span style="justify-self:end;font-family:Caveat,cursive;font-weight:700;font-size:28px">{{ w.meta }}</span></div></sc-for>
+</div>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:30px 0;display:flex;gap:30px;justify-content:center;font-size:30px;font-weight:800;text-transform:uppercase;white-space:nowrap;overflow:hidden"><span>Find us at the markets</span><span style="color:#E79CBC">✶</span><span>The Garage · Chilwell</span><span style="color:#E79CBC">✶</span><span>Sherwood Crafts Fair</span><span style="color:#E79CBC">✶</span><span>Kibbeh on market days!</span></div>
+<div style="background:#E79CBC;padding:90px 40px;display:grid;grid-template-columns:minmax(0,1fr) 620px;gap:56px">
+<div style="display:flex;flex-direction:column;gap:20px"><h2 style="font-size:88px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">Save me a spot!</h2><span style="font-size:19px;line-height:1.5;max-width:420px">Register interest for a workshop, or book a private session for your group.</span></div>
+<div style="background:#FFF8F1;border:2px solid #232A27;border-radius:28px;padding:34px">
+<sc-if value="{{ wsOpen }}" hint-placeholder-val="{{ true }}"><div style="display:flex;flex-direction:column;gap:18px">
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ wsChips }}" as="ch" hint-placeholder-count="4"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:9px 16px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div>
+<div style="display:grid;grid-template-columns:1fr 1fr 110px;gap:10px"><input placeholder="Name" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff"><input placeholder="Email or phone" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff"><input placeholder="People" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff"></div>
+<button type="button" onClick="{{ wsSend }}" style="background:#232A27;color:#fff;border:0;padding:15px 22px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:600;cursor:pointer;align-self:flex-start">I'm in →</button>
+</div></sc-if>
+<sc-if value="{{ wsSent }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:12px;padding:20px 0"><span style="font-size:52px;font-weight:800;letter-spacing:-.03em;line-height:.95">You're on the list!</span><span style="font-size:17px">We'll be in touch about {{ wsType }}.</span><button type="button" onClick="{{ wsReset }}" style="background:none;border:0;padding:0;font-size:15px;font-weight:600;text-decoration:underline;cursor:pointer;align-self:flex-start">Send another</button></div></sc-if>
+</div>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:40px;display:flex;justify-content:space-between;align-items:center;border-top:2px solid #232A27"><span style="font-family:Caveat,cursive;font-weight:700;font-size:48px;line-height:1">inbetween</span><span style="font-size:15px">536A Mansfield Rd · Tue–Sat 9–5 · Sun 10–4</span><span style="font-size:15px">0115 496 0000 · hello@inbetweennotts.co.uk</span></div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ show.C4 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C4">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C4">C4</a>Our story · desktop</div></sc-if>
+<div class="dv-card" style="width:1280px;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:2px solid #232A27">
+<a href="#C1" style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:44px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:13px;margin:-6px 0 0 36px">baked moments · shared stories</span></a>
+<div style="display:flex;gap:4px;border:2px solid #232A27;border-radius:40px;padding:5px;font-size:15px;font-weight:600"><a href="#C2" style="padding:9px 18px">Cakes</a><a href="#C7" style="padding:9px 18px">Catering</a><a href="#C3" style="padding:9px 18px">Workshops</a><a href="#C1" style="padding:9px 18px">Menu</a><a href="#C4" style="padding:9px 18px;background:#BFE3D3;border-radius:40px">Our story</a></div>
+<a href="#C2" style="background:#232A27;color:#fff;padding:15px 22px;border-radius:40px;font-size:15px;font-weight:600">Plan a cake →</a>
+</div>
+<div style="padding:100px 40px 60px;display:flex;flex-direction:column;gap:30px">
+<h1 style="font-size:150px;font-weight:800;line-height:.85;letter-spacing:-.055em;margin:0">Syrian recipes.<br><span style="color:#E79CBC;-webkit-text-stroke:2px #232A27">Nottingham</span> kitchen.</h1>
+<sc-if value="{{ arabic }}" hint-placeholder-val="{{ true }}"><span dir="rtl" style="align-self:flex-start;background:#BFE3D3;border:2px solid #232A27;border-radius:40px;padding:10px 26px;font-family:Amiri,serif;font-weight:700;font-size:34px;transform:rotate(-3deg)">بين القهوة والشاي، حكايات تُروى</span></sc-if>
+</div>
+<div style="padding:30px 40px 90px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px">
+<sc-for list="{{ scraps }}" as="g" hint-placeholder-count="4"><div style="background:#fff;padding:12px 12px 16px;box-shadow:0 10px 30px rgba(35,42,39,.14);transform:rotate({{ g.rot }})"><img src="{{ g.img }}" alt="{{ g.cap }}" style="width:100%;aspect-ratio:4/5;object-fit:cover;display:block"><div style="font-family:Caveat,cursive;font-size:26px;font-weight:700;padding-top:10px">{{ g.cap }}</div></div></sc-for>
+</div>
+<div style="padding:0 40px 100px;display:grid;grid-template-columns:1fr 1fr;gap:56px;font-size:24px;line-height:1.5">
+<p style="margin:0;font-weight:600">InBetween began with the recipes we grew up with — the cardamom in the coffee, the za'atar on Saturday mornings, the trays of sweets that appear whenever guests arrive. In Syria, food is how you say welcome.</p>
+<p style="margin:0">So we opened a little place on Mansfield Road where that feeling lives on. Everything on the counter is baked in our kitchen each morning. The name? It's the moment in between — coffee and conversation, home and somewhere new.</p>
+</div>
+<div style="padding:0 40px 100px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px">
+<sc-for list="{{ values }}" as="v" hint-placeholder-count="3"><div style="background:{{ v.tone }};border:2px solid #232A27;border-radius:28px;padding:34px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between;gap:20px"><span style="font-size:44px;font-weight:800;letter-spacing:-.03em;line-height:.95">{{ v.t }}</span><span style="font-size:17px;line-height:1.5">{{ v.d }}</span></div></sc-for>
+</div>
+<div style="background:#E79CBC;padding:90px 40px;border-top:2px solid #232A27;display:flex;justify-content:space-between;align-items:center;gap:40px"><h2 style="font-size:96px;font-weight:800;line-height:.88;letter-spacing:-.04em;margin:0">Pull up<br>a chair.</h2><div style="display:flex;flex-direction:column;gap:14px;align-items:flex-end"><span style="font-family:Caveat,cursive;font-weight:700;font-size:34px">there's always a pot of coffee on</span><div style="display:flex;gap:12px"><a href="#C1" style="background:#232A27;color:#fff;padding:16px 24px;border-radius:40px;font-size:16px;font-weight:600">Find us</a><a href="#C2" style="background:#fff;border:2px solid #232A27;padding:14px 24px;border-radius:40px;font-size:16px;font-weight:600">Plan a cake</a></div></div></div>
+<div style="background:#232A27;color:#FFF8F1;padding:40px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:Caveat,cursive;font-weight:700;font-size:48px;line-height:1">inbetween</span><span style="font-size:15px">536A Mansfield Rd · Tue–Sat 9–5 · Sun 10–4</span><span style="font-size:15px">0115 496 0000 · hello@inbetweennotts.co.uk</span></div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ show.C7 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C7">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C7">C7</a>Catering · desktop</div></sc-if>
+<div class="dv-card" style="width:1280px;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="display:flex;justify-content:space-between;align-items:center;padding:20px 40px;border-bottom:2px solid #232A27">
+<a href="#C1" style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:44px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:13px;margin:-6px 0 0 36px">baked moments · shared stories</span></a>
+<div style="display:flex;gap:4px;border:2px solid #232A27;border-radius:40px;padding:5px;font-size:15px;font-weight:600"><a href="#C2" style="padding:9px 18px">Cakes</a><a href="#C7" style="padding:9px 18px;background:#BFE3D3;border-radius:40px">Catering</a><a href="#C3" style="padding:9px 18px">Workshops</a><a href="#C1" style="padding:9px 18px">Menu</a><a href="#C4" style="padding:9px 18px">Our story</a></div>
+<a href="#C2" style="background:#232A27;color:#fff;padding:15px 22px;border-radius:40px;font-size:15px;font-weight:600">Plan a cake →</a>
+</div>
+<div style="background:#BFE3D3;padding:90px 40px 100px;border-bottom:2px solid #232A27;display:grid;grid-template-columns:minmax(0,1fr) 460px;gap:40px;align-items:center">
+<div style="display:flex;flex-direction:column;gap:26px"><h1 style="font-size:150px;font-weight:800;line-height:.84;letter-spacing:-.055em;margin:0">Feeding the whole crew.</h1><p style="font-size:22px;line-height:1.45;margin:0;max-width:540px;font-weight:600">Sharing platters, sweets and cakes for offices, family gatherings and big celebrations — quoted personally, every time.</p><a href="#C7" style="align-self:flex-start;background:#232A27;color:#fff;padding:16px 26px;border-radius:40px;font-size:17px;font-weight:600">Get a quote →</a></div>
+<div style="position:relative;height:480px"><img src="assets/salad-lentil.png" alt="" style="position:absolute;left:10px;top:0;width:290px;height:340px;object-fit:cover;border:10px solid #fff;border-bottom-width:44px;transform:rotate(-5deg);box-shadow:0 18px 40px rgba(0,0,0,.15)"><img src="assets/biscuits.png" alt="" style="position:absolute;right:0;top:120px;width:220px;height:260px;object-fit:cover;border:10px solid #fff;border-bottom-width:40px;transform:rotate(6deg);box-shadow:0 18px 40px rgba(0,0,0,.15)"><span style="position:absolute;left:30px;bottom:10px;background:#E79CBC;border:2px solid #232A27;border-radius:40px;padding:12px 20px;font-family:Caveat,cursive;font-weight:700;font-size:28px;transform:rotate(-4deg)">from 10 guests up!</span></div>
+</div>
+<div style="padding:100px 40px">
+<div style="display:flex;justify-content:space-between;align-items:end;margin-bottom:44px"><h2 style="font-size:96px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">What we bring</h2><span style="font-family:Caveat,cursive;font-size:30px;font-weight:700;transform:rotate(-2deg)">all vegetarian, all made here</span></div>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px">
+<sc-for list="{{ cater }}" as="c" hint-placeholder-count="4"><div style="background:{{ c.tone }};border:2px solid #232A27;border-radius:28px;overflow:hidden;display:flex;flex-direction:column"><img src="{{ c.img }}" alt="" style="width:100%;height:220px;object-fit:cover;display:block;border-bottom:2px solid #232A27"><div style="padding:24px;display:flex;flex-direction:column;gap:10px"><span style="font-size:30px;font-weight:800;letter-spacing:-.03em;line-height:.95">{{ c.name }}</span><span style="font-size:16px;line-height:1.45">{{ c.desc }}</span></div></div></sc-for>
+</div>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:30px 0;display:flex;gap:30px;justify-content:center;font-size:30px;font-weight:800;text-transform:uppercase;white-space:nowrap;overflow:hidden"><sc-for list="{{ caterFor }}" as="w" hint-placeholder-count="4"><span style="display:flex;gap:30px"><span>{{ w.t }}</span><span style="color:#E79CBC">✶</span></span></sc-for></div>
+<div style="padding:100px 40px">
+<h2 style="font-size:80px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 40px">Easy as 1, 2, 3, 4</h2>
+<div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px">
+<sc-for list="{{ caterSteps }}" as="s" hint-placeholder-count="4"><div style="background:{{ s.tone }};border:2px solid #232A27;border-radius:28px;padding:30px;min-height:260px;display:flex;flex-direction:column;gap:14px"><span style="font-size:96px;font-weight:800;line-height:.8;letter-spacing:-.05em">{{ s.n }}</span><span style="font-size:28px;font-weight:800;letter-spacing:-.02em;line-height:1">{{ s.t }}</span><span style="font-size:16px;line-height:1.45">{{ s.d }}</span></div></sc-for>
+</div>
+</div>
+<div style="background:#E79CBC;padding:90px 40px;border-top:2px solid #232A27;display:grid;grid-template-columns:minmax(0,1fr) 620px;gap:56px">
+<div style="display:flex;flex-direction:column;gap:20px"><h2 style="font-size:88px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">Let's plan your spread!</h2><div style="display:flex;flex-direction:column;gap:10px;margin-top:8px"><sc-for list="{{ caterFaqs }}" as="q" hint-placeholder-count="4"><div style="background:#FFF8F1;border:2px solid #232A27;border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:4px"><span style="font-size:18px;font-weight:800">{{ q.q }}</span><span style="font-size:15px;line-height:1.45">{{ q.a }}</span></div></sc-for></div></div>
+<div style="background:#FFF8F1;border:2px solid #232A27;border-radius:28px;padding:34px;align-self:start">
+<sc-if value="{{ catOpen }}" hint-placeholder-val="{{ true }}"><div style="display:flex;flex-direction:column;gap:18px">
+<span style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em">What's the occasion?</span>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ catChips }}" as="ch" hint-placeholder-count="5"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:9px 16px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div>
+<div style="display:grid;grid-template-columns:1fr 120px;gap:10px"><input type="date" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff;min-width:0;font-family:'Bricolage Grotesque',sans-serif"><input placeholder="Guests" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff;min-width:0;font-family:'Bricolage Grotesque',sans-serif"></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px"><input placeholder="Name" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff;min-width:0;font-family:'Bricolage Grotesque',sans-serif"><input placeholder="Email or phone" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff;min-width:0;font-family:'Bricolage Grotesque',sans-serif"></div>
+<textarea rows="3" placeholder="Venue, dietary needs, anything else…" style="border:2px solid #232A27;border-radius:14px;padding:13px 14px;font-size:15px;background:#fff;min-width:0;font-family:'Bricolage Grotesque',sans-serif;resize:vertical"></textarea>
+<button type="button" onClick="{{ catSend }}" style="background:#232A27;color:#fff;border:0;padding:15px 22px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:600;cursor:pointer;align-self:flex-start">Send it over →</button>
+</div></sc-if>
+<sc-if value="{{ catSent }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:12px;padding:20px 0"><span style="font-size:52px;font-weight:800;letter-spacing:-.03em;line-height:.95">Got it — thank you!</span><span style="font-size:17px">We'll be in touch about your {{ catType }} within two working days.</span><button type="button" onClick="{{ catReset }}" style="background:none;border:0;padding:0;font-size:15px;font-weight:600;text-decoration:underline;cursor:pointer;align-self:flex-start">Send another</button></div></sc-if>
+</div>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:40px;display:flex;justify-content:space-between;align-items:center"><span style="font-family:Caveat,cursive;font-weight:700;font-size:48px;line-height:1">inbetween</span><span style="font-size:15px">536A Mansfield Rd · Tue–Sat 9–5 · Sun 10–4</span><span style="font-size:15px">0115 496 0000 · hello@inbetweennotts.co.uk</span></div>
+</div>
+</div>
+</sc-if>
+
+</div>
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-thd" style="margin:56px 0 20px"><span class="dv-tname">Mobile</span></div></sc-if>
+<div class="dv-opts">
+<sc-if value="{{ show.C5 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C5">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C5">C5</a>Home · mobile</div></sc-if>
+<div style="width:390px;background:#161816;border-radius:52px;padding:12px;box-shadow:0 20px 50px rgba(0,0,0,.2)">
+<div style="border-radius:42px;overflow:hidden;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="background:#E79CBC;position:relative;overflow:hidden;height:640px">
+<div style="height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 28px;font-size:14px;font-weight:600"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #232A27;border-radius:3px"></span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 16px"><span style="background:#fff;border-radius:40px;padding:10px 14px;font-size:13px;font-weight:600">Open · 9–5</span><span style="background:#232A27;color:#fff;border-radius:40px;padding:12px 18px;font-size:14px;font-weight:600">Menu</span></div>
+<div style="display:flex;flex-direction:column;align-items:center;color:#fff;margin-top:36px"><span style="font-family:Caveat,cursive;font-weight:700;font-size:98px;line-height:.8">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:18px;line-height:1.05;margin:4px 0 0 90px;display:flex;flex-direction:column"><span>baked moments</span><span style="margin-left:20px">shared stories</span></span></div>
+<p style="margin:22px 24px 0;font-size:18px;font-weight:600;text-align:center;line-height:1.35">Syrian bakes, specialty brews &amp; a whole lot of cake.</p>
+<img src="assets/cake-strawberry.png" alt="" style="position:absolute;left:24px;bottom:40px;width:160px;height:190px;object-fit:cover;border:8px solid #fff;border-bottom-width:30px;transform:rotate(-7deg);box-shadow:0 14px 30px rgba(0,0,0,.18)">
+<img src="assets/biscuits.png" alt="" style="position:absolute;right:20px;bottom:60px;width:150px;height:170px;object-fit:cover;border:8px solid #fff;border-bottom-width:30px;transform:rotate(6deg);box-shadow:0 14px 30px rgba(0,0,0,.18)">
+<div style="position:absolute;left:150px;bottom:16px;width:96px;height:96px;border-radius:50%;background:#BFE3D3;display:flex;align-items:center;justify-content:center;text-align:center;transform:rotate(-12deg);font-family:Caveat,cursive;font-weight:700;font-size:17px;line-height:1;padding:10px;box-sizing:border-box">fresh every morning</div>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:14px 0;font-size:18px;font-weight:800;text-transform:uppercase;display:flex;gap:14px;justify-content:center;white-space:nowrap;overflow:hidden"><span>Baked moments</span><span style="color:#E79CBC">✶</span><span>Shared stories</span></div>
+<div style="padding:36px 16px;display:flex;flex-direction:column;gap:12px">
+<h2 style="font-size:48px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 8px">What are you after?</h2>
+<sc-for list="{{ offers }}" as="o" hint-placeholder-count="4"><a href="{{ o.href }}" style="background:{{ o.tone }};border:2px solid #232A27;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1fr 110px;min-height:120px"><span style="padding:18px;display:flex;flex-direction:column;gap:6px"><span style="font-size:26px;font-weight:800;letter-spacing:-.02em;line-height:.95">{{ o.name }}</span><span style="font-size:14px;line-height:1.4">{{ o.desc }}</span></span><img src="{{ o.img }}" alt="" style="width:110px;height:100%;object-fit:cover;display:block;border-left:2px solid #232A27"></a></sc-for>
+</div>
+<div style="margin:0 16px 36px;background:#2F3532;border:10px solid #3B403D;border-radius:8px;padding:24px 20px;color:#F4F1EA;font-family:Caveat,cursive">
+<div style="font-size:38px;color:#BFE3D3;line-height:1;margin-bottom:6px">Brunch Menu</div>
+<div style="font-size:24px;color:#EFA46C">small plates, flatbreads, coffee &amp; more</div>
+<a href="#" style="display:block;margin-top:16px;background:#E79CBC;color:#232A27;padding:13px 0;border-radius:40px;text-align:center;font-family:'Bricolage Grotesque',sans-serif;font-size:15px;font-weight:600">Download menu PDF ↓</a>
+</div>
+<div style="padding:0 16px 36px;display:flex;flex-direction:column;gap:14px">
+<h2 style="font-size:48px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 6px">What's on</h2>
+<sc-for list="{{ nextEvents }}" as="e" hint-placeholder-count="2"><div style="background:{{ e.bg }};color:{{ e.fg }};border:2px solid #232A27;border-radius:10px;padding:20px 18px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;align-items:baseline;gap:8px;color:{{ e.acc }}"><span style="font-size:48px;font-weight:800;line-height:.85">{{ e.d }}</span><span style="font-size:18px;font-weight:800">{{ e.m }}</span></div><span style="font-size:24px;font-weight:800;line-height:1">{{ e.t }}</span><span style="font-size:14px">{{ e.meta }}</span></div></sc-for>
+<a href="#C3" style="display:block;text-align:center;border:2px solid #232A27;border-radius:40px;padding:13px 0;font-size:15px;font-weight:700">All workshops &amp; events →</a>
+</div>
+<div style="background:#BFE3D3;padding:32px 16px;display:flex;flex-direction:column;gap:14px">
+<h2 style="font-size:48px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">Say hello!</h2>
+<sc-if value="{{ mhomeOpen }}" hint-placeholder-val="{{ true }}"><div style="display:flex;flex-direction:column;gap:10px">
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ mhomeChips }}" as="ch" hint-placeholder-count="4"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:10px 14px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div>
+<input placeholder="Name" style="border:2px solid #232A27;border-radius:14px;padding:14px;font-size:16px;background:#fff">
+<input placeholder="Email or phone" style="border:2px solid #232A27;border-radius:14px;padding:14px;font-size:16px;background:#fff">
+<button type="button" onClick="{{ mhomeSend }}" style="background:#E79CBC;color:#232A27;border:2px solid #232A27;padding:15px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:16px;font-weight:800;cursor:pointer">Send it →</button>
+</div></sc-if>
+<sc-if value="{{ mhomeSent }}" hint-placeholder-val="{{ false }}"><div style="display:flex;flex-direction:column;gap:8px"><span style="font-size:36px;font-weight:800;line-height:.95">Yay — got it!</span><button type="button" onClick="{{ mhomeReset }}" style="background:none;border:0;padding:0;font-size:14px;font-weight:600;text-decoration:underline;cursor:pointer;align-self:flex-start">Send another</button></div></sc-if>
+</div>
+<div style="background:#E79CBC;padding:32px 16px;display:flex;flex-direction:column;gap:10px"><span style="font-size:34px;font-weight:800;line-height:.95;letter-spacing:-.03em">536A Mansfield Rd, Nottingham</span><span style="font-size:15px;font-weight:600">Tue–Sat 9–5 · Sun 10–4 · Mon closed</span><div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:6px"><a href="#" style="background:#232A27;color:#fff;padding:14px 0;border-radius:40px;text-align:center;font-size:14px;font-weight:600">Directions</a><a href="#" style="background:#fff;border:2px solid #232A27;padding:12px 0;border-radius:40px;text-align:center;font-size:14px;font-weight:600">Call us</a></div></div>
+<div style="background:#232A27;color:#FFF8F1;padding:24px 16px 40px;font-size:14px;line-height:1.7"><div style="font-family:Caveat,cursive;font-weight:700;font-size:36px;line-height:1;margin-bottom:8px">inbetween</div>hello@inbetweennotts.co.uk · 0115 496 0000</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ show.C6 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C6">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C6">C6</a>Cakes to order · mobile</div></sc-if>
+<div style="width:390px;background:#161816;border-radius:52px;padding:12px;box-shadow:0 20px 50px rgba(0,0,0,.2)">
+<div style="border-radius:42px;overflow:hidden;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 28px;font-size:14px;font-weight:600"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #232A27;border-radius:3px"></span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 16px 12px;border-bottom:2px solid #232A27"><div style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:34px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:11px;margin:-4px 0 0 28px">baked moments · shared stories</span></div><span style="background:#232A27;color:#fff;border-radius:40px;padding:12px 18px;font-size:14px;font-weight:600">Menu</span></div>
+<div style="padding:36px 16px 24px;display:flex;flex-direction:column;gap:16px"><h1 style="font-size:84px;font-weight:800;line-height:.82;letter-spacing:-.055em;margin:0">Cakes to order.</h1><p style="margin:0;font-size:17px;line-height:1.45;font-weight:600">Tell us your idea — we'll bake it and quote it personally.</p></div>
+<div style="position:relative;height:280px;margin-bottom:12px"><img src="assets/cake-pink.png" alt="" style="position:absolute;left:28px;top:10px;width:170px;height:210px;object-fit:cover;border:8px solid #fff;border-bottom-width:30px;transform:rotate(-5deg);box-shadow:0 14px 30px rgba(0,0,0,.15)"><img src="assets/cake-strawberry.png" alt="" style="position:absolute;right:24px;top:40px;width:160px;height:200px;object-fit:cover;border:8px solid #fff;border-bottom-width:30px;transform:rotate(5deg);box-shadow:0 14px 30px rgba(0,0,0,.15)"></div>
+<div style="background:#E79CBC;border-top:2px solid #232A27;border-bottom:2px solid #232A27;padding:28px 16px;display:flex;flex-direction:column;gap:10px">
+<sc-for list="{{ cakeTypesShort }}" as="c" hint-placeholder-count="4"><div style="background:#fff;border:2px solid #232A27;border-radius:18px;padding:16px;display:flex;flex-direction:column;gap:4px"><span style="font-size:22px;font-weight:800;letter-spacing:-.02em">{{ c.name }}</span><span style="font-size:14px;line-height:1.45">{{ c.desc }}</span></div></sc-for>
+</div>
+<div style="background:#BFE3D3;padding:32px 16px;display:flex;flex-direction:column;gap:16px">
+<h2 style="font-size:42px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">Plan your cake</h2>
+<span style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em">Occasion</span>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ moccChips }}" as="ch" hint-placeholder-count="6"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:10px 14px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div>
+<span style="font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.08em">How many people?</span>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ servChips }}" as="ch" hint-placeholder-count="4"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:10px 14px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div>
+<input placeholder="Email or phone" style="border:2px solid #232A27;border-radius:14px;padding:14px;font-size:16px;background:#fff">
+<a href="#C6" style="background:#232A27;color:#fff;padding:16px;border-radius:40px;text-align:center;font-size:16px;font-weight:600">Send to InBetween →</a>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:24px 16px 40px;font-size:14px;line-height:1.7">536A Mansfield Rd · 0115 496 0000<br>hello@inbetweennotts.co.uk</div>
+</div>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{ show.C8 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C8">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C8">C8</a>Catering · mobile</div></sc-if>
+<div style="width:390px;background:#161816;border-radius:52px;padding:12px;box-shadow:0 20px 50px rgba(0,0,0,.2)">
+<div style="border-radius:42px;overflow:hidden;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 28px;font-size:14px;font-weight:600"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #232A27;border-radius:3px"></span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 16px 12px;border-bottom:2px solid #232A27"><a href="#C5" style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:34px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:11px;margin:-4px 0 0 28px">baked moments · shared stories</span></a><span style="background:#232A27;color:#fff;border-radius:40px;padding:12px 18px;font-size:14px;font-weight:600">Menu</span></div>
+<div style="background:#BFE3D3;padding:36px 16px 24px;display:flex;flex-direction:column;gap:16px;border-bottom:2px solid #232A27"><h1 style="font-size:76px;font-weight:800;line-height:.84;letter-spacing:-.055em;margin:0">Feeding the whole crew.</h1><p style="margin:0;font-size:17px;line-height:1.45;font-weight:600">Platters, sweets and cakes for offices, gatherings and celebrations.</p>
+<div style="position:relative;height:250px"><img src="assets/salad-lentil.png" alt="" style="position:absolute;left:12px;top:10px;width:170px;height:200px;object-fit:cover;border:8px solid #fff;border-bottom-width:30px;transform:rotate(-5deg);box-shadow:0 14px 30px rgba(0,0,0,.15)"><img src="assets/biscuits.png" alt="" style="position:absolute;right:10px;top:30px;width:150px;height:180px;object-fit:cover;border:8px solid #fff;border-bottom-width:30px;transform:rotate(5deg);box-shadow:0 14px 30px rgba(0,0,0,.15)"></div></div>
+<div style="padding:32px 16px;display:flex;flex-direction:column;gap:10px"><h2 style="font-size:42px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 8px">What we bring</h2>
+<sc-for list="{{ cater }}" as="c" hint-placeholder-count="4"><div style="background:{{ c.tone }};border:2px solid #232A27;border-radius:22px;overflow:hidden;display:grid;grid-template-columns:1fr 100px;min-height:110px"><span style="padding:16px;display:flex;flex-direction:column;gap:6px"><span style="font-size:22px;font-weight:800;letter-spacing:-.02em;line-height:.95">{{ c.name }}</span><span style="font-size:14px;line-height:1.4">{{ c.desc }}</span></span><img src="{{ c.img }}" alt="" style="width:100px;height:100%;object-fit:cover;display:block;border-left:2px solid #232A27"></div></sc-for></div>
+<div style="padding:0 16px 32px;display:flex;flex-direction:column;gap:10px"><h2 style="font-size:42px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 8px">How it works</h2>
+<sc-for list="{{ caterSteps }}" as="s" hint-placeholder-count="4"><div style="background:{{ s.tone }};border:2px solid #232A27;border-radius:18px;padding:16px;display:grid;grid-template-columns:56px 1fr;gap:10px;align-items:start"><span style="font-size:44px;font-weight:800;line-height:.85;letter-spacing:-.04em">{{ s.n }}</span><span style="display:flex;flex-direction:column;gap:4px"><span style="font-size:19px;font-weight:800">{{ s.t }}</span><span style="font-size:14px;line-height:1.45">{{ s.d }}</span></span></div></sc-for></div>
+<div style="background:#E79CBC;padding:32px 16px;display:flex;flex-direction:column;gap:14px;border-top:2px solid #232A27">
+<h2 style="font-size:42px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">Get a quote</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ catChips }}" as="ch" hint-placeholder-count="5"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:10px 14px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div>
+<div style="display:grid;grid-template-columns:1fr 100px;gap:8px"><input type="date" style="border:2px solid #232A27;border-radius:14px;padding:14px;font-size:16px;background:#fff;min-width:0"><input placeholder="Guests" style="border:2px solid #232A27;border-radius:14px;padding:14px;font-size:16px;background:#fff;min-width:0"></div><input placeholder="Email or phone" style="border:2px solid #232A27;border-radius:14px;padding:14px;font-size:16px;background:#fff;min-width:0">
+<a href="#C8" style="background:#232A27;color:#fff;padding:16px;border-radius:40px;text-align:center;font-size:16px;font-weight:600">Send it over →</a>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:24px 16px 40px;font-size:14px;line-height:1.7">536A Mansfield Rd · 0115 496 0000<br>hello@inbetweennotts.co.uk</div>
+</div>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{ show.C9 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C9">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C9">C9</a>Workshops &amp; events · mobile</div></sc-if>
+<div style="width:390px;background:#161816;border-radius:52px;padding:12px;box-shadow:0 20px 50px rgba(0,0,0,.2)">
+<div style="border-radius:42px;overflow:hidden;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 28px;font-size:14px;font-weight:600"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #232A27;border-radius:3px"></span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 16px 12px;border-bottom:2px solid #232A27"><a href="#C5" style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:34px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:11px;margin:-4px 0 0 28px">baked moments · shared stories</span></a><span style="background:#232A27;color:#fff;border-radius:40px;padding:12px 18px;font-size:14px;font-weight:600">Menu</span></div>
+<div style="background:#F3D9A4;padding:36px 16px 24px;display:flex;flex-direction:column;gap:16px;border-bottom:2px solid #232A27"><h1 style="font-size:80px;font-weight:800;line-height:.84;letter-spacing:-.055em;margin:0">Come bake with us.</h1><p style="margin:0;font-size:17px;line-height:1.45;font-weight:600">Workshops, parties and long brunches around our big marble table.</p>
+<div style="position:relative;height:240px"><img src="assets/cafe-moment.png" alt="" style="position:absolute;left:60px;top:10px;width:200px;height:200px;object-fit:cover;border:8px solid #fff;border-bottom-width:30px;transform:rotate(4deg);box-shadow:0 14px 30px rgba(0,0,0,.15)"><span style="position:absolute;left:0;bottom:6px;background:#E79CBC;border:2px solid #232A27;border-radius:40px;padding:8px 14px;font-family:Caveat,cursive;font-weight:700;font-size:22px;transform:rotate(-6deg)">max 8 people — cosy!</span></div></div>
+<div style="padding:32px 16px;display:flex;flex-direction:column;gap:14px"><h2 style="font-size:48px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 6px">What's on</h2>
+<sc-for list="{{ events }}" as="e" hint-placeholder-count="3"><div style="background:{{ e.bg }};color:{{ e.fg }};border:2px solid #232A27;border-radius:10px;padding:20px 18px;display:flex;flex-direction:column;gap:8px"><div style="display:flex;align-items:baseline;gap:8px;color:{{ e.acc }}"><span style="font-size:48px;font-weight:800;line-height:.85">{{ e.d }}</span><span style="font-size:18px;font-weight:800">{{ e.m }}</span></div><span style="font-size:24px;font-weight:800;line-height:1">{{ e.t }}</span><span style="font-size:14px">{{ e.meta }}</span></div></sc-for></div>
+<div style="padding:0 16px 32px;display:flex;flex-direction:column;gap:10px"><h2 style="font-size:42px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0 0 8px">Workshops</h2>
+<sc-for list="{{ workshops }}" as="w" hint-placeholder-count="4"><div style="background:{{ w.tone }};border:2px solid #232A27;border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:6px"><span style="font-size:24px;font-weight:800;letter-spacing:-.02em;line-height:.95">{{ w.name }}</span><span style="font-size:14px;line-height:1.4">{{ w.desc }}</span><span style="font-family:Caveat,cursive;font-weight:700;font-size:22px">{{ w.meta }}</span></div></sc-for></div>
+<div style="background:#E79CBC;padding:32px 16px;display:flex;flex-direction:column;gap:14px;border-top:2px solid #232A27">
+<h2 style="font-size:42px;font-weight:800;line-height:.9;letter-spacing:-.04em;margin:0">Save me a spot!</h2>
+<div style="display:flex;flex-wrap:wrap;gap:8px"><sc-for list="{{ wsChips }}" as="ch" hint-placeholder-count="5"><button type="button" onClick="{{ ch.onClick }}" style="background:{{ ch.bg }};color:{{ ch.fg }};border:2px solid {{ ch.bd }};padding:10px 14px;border-radius:40px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;font-weight:600;cursor:pointer">{{ ch.label }}</button></sc-for></div>
+<input placeholder="Name" style="border:2px solid #232A27;border-radius:14px;padding:14px;font-size:16px;background:#fff;min-width:0"><input placeholder="Email or phone" style="border:2px solid #232A27;border-radius:14px;padding:14px;font-size:16px;background:#fff;min-width:0">
+<a href="#C9" style="background:#232A27;color:#fff;padding:16px;border-radius:40px;text-align:center;font-size:16px;font-weight:600">I'm in →</a>
+</div>
+<div style="background:#232A27;color:#FFF8F1;padding:24px 16px 40px;font-size:14px;line-height:1.7">536A Mansfield Rd · 0115 496 0000<br>hello@inbetweennotts.co.uk</div>
+</div>
+</div>
+</div>
+</sc-if>
+<sc-if value="{{ show.C10 }}" hint-placeholder-val="{{ true }}"><div class="dv-opt" id="C10">
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><div class="dv-olabel"><a class="dv-oid" href="#C10">C10</a>Our story · mobile</div></sc-if>
+<div style="width:390px;background:#161816;border-radius:52px;padding:12px;box-shadow:0 20px 50px rgba(0,0,0,.2)">
+<div style="border-radius:42px;overflow:hidden;background:#FFF8F1;color:#232A27;font-family:'Bricolage Grotesque',sans-serif">
+<div style="height:44px;display:flex;justify-content:space-between;align-items:center;padding:0 28px;font-size:14px;font-weight:600"><span>9:41</span><span style="width:24px;height:11px;border:1.5px solid #232A27;border-radius:3px"></span></div>
+<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 16px 12px;border-bottom:2px solid #232A27"><a href="#C5" style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:34px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:11px;margin:-4px 0 0 28px">baked moments · shared stories</span></a><span style="background:#232A27;color:#fff;border-radius:40px;padding:12px 18px;font-size:14px;font-weight:600">Menu</span></div>
+<div style="padding:36px 16px 20px;display:flex;flex-direction:column;gap:18px"><h1 style="font-size:64px;font-weight:800;line-height:.86;letter-spacing:-.055em;margin:0">Syrian recipes.<br><span style="color:#E79CBC;-webkit-text-stroke:1.5px #232A27">Nottingham</span> kitchen.</h1>
+<sc-if value="{{ arabic }}" hint-placeholder-val="{{ true }}"><span dir="rtl" style="align-self:flex-start;background:#BFE3D3;border:2px solid #232A27;border-radius:40px;padding:8px 18px;font-family:Amiri,serif;font-weight:700;font-size:22px;transform:rotate(-3deg)">بين القهوة والشاي، حكايات تُروى</span></sc-if></div>
+<div style="padding:10px 16px 24px;display:grid;grid-template-columns:1fr 1fr;gap:14px"><sc-for list="{{ scrapsShort }}" as="g" hint-placeholder-count="2"><div style="background:#fff;padding:8px 8px 10px;box-shadow:0 10px 24px rgba(35,42,39,.14);transform:rotate({{ g.rot }})"><img src="{{ g.img }}" alt="{{ g.cap }}" style="width:100%;aspect-ratio:4/5;object-fit:cover;display:block"><div style="font-family:Caveat,cursive;font-size:18px;font-weight:700;padding-top:6px">{{ g.cap }}</div></div></sc-for></div>
+<div style="padding:8px 16px 28px;display:flex;flex-direction:column;gap:14px;font-size:17px;line-height:1.5">
+<p style="margin:0;font-weight:600">InBetween began with the recipes we grew up with — the cardamom in the coffee, the za'atar on Saturday mornings, the trays of sweets that appear whenever guests arrive.</p>
+<p style="margin:0">So we opened a little place on Mansfield Road where that feeling lives on. The name? It's the moment in between — coffee and conversation, home and somewhere new.</p>
+</div>
+<div style="padding:0 16px 32px;display:flex;flex-direction:column;gap:10px"><sc-for list="{{ values }}" as="v" hint-placeholder-count="3"><div style="background:{{ v.tone }};border:2px solid #232A27;border-radius:22px;padding:20px;display:flex;flex-direction:column;gap:8px"><span style="font-size:28px;font-weight:800;letter-spacing:-.03em;line-height:.95">{{ v.t }}</span><span style="font-size:15px;line-height:1.45">{{ v.d }}</span></div></sc-for></div>
+<div style="background:#E79CBC;padding:32px 16px;border-top:2px solid #232A27;display:flex;flex-direction:column;gap:12px"><h2 style="font-size:48px;font-weight:800;line-height:.88;letter-spacing:-.04em;margin:0">Pull up a chair.</h2><span style="font-family:Caveat,cursive;font-weight:700;font-size:24px">there's always a pot of coffee on</span><a href="#C6" style="background:#232A27;color:#fff;padding:15px;border-radius:40px;text-align:center;font-size:16px;font-weight:600">Plan a cake →</a></div>
+<div style="background:#232A27;color:#FFF8F1;padding:24px 16px 40px;font-size:14px;line-height:1.7">536A Mansfield Rd · 0115 496 0000<br>hello@inbetweennotts.co.uk</div>
+</div>
+</div>
+</div>
+</sc-if>
+
+</div>
+<sc-if value="{{ chrome }}" hint-placeholder-val="{{ true }}"><p class="dv-next">Compare with <a href="InBetween-A-Shopfront.dc.html" style="text-decoration:underline">Direction A</a> · <a href="InBetween-B-BakedMoments.dc.html" style="text-decoration:underline">Direction B</a></p></sc-if>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;showArabic&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;page&quot;:{&quot;editor&quot;:null,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+const L=a=>a.map(([n,p])=>({n,p}));
+const OFFERS=[
+{name:'Cakes to order',desc:'Birthdays, weddings, Eid and baby showers — designed with you.',img:'assets/cake-strawberry.png',cta:'Plan a cake',tone:'#E79CBC',href:'#C2'},
+{name:'Catering',desc:'Mezze platters, flatbread trays and sweet boxes for offices and parties.',img:'assets/flatbread.png',cta:'Get a quote',tone:'#BFE3D3',href:'#C7'},
+{name:'Workshops & events',desc:'Cookie decorating, maamoul making, brunch mornings and parties.',img:'assets/biscuits.png',cta:"What's on",tone:'#F3D9A4',href:'#C3'},
+{name:'Our story',desc:'Family recipes from Syria, baked fresh on Mansfield Road.',img:'assets/owner.png',cta:'Meet us',tone:'#FFF8F1',href:'#C4'}];
+const COFFEE=L([['Americano','3.50'],['Cappuccino','3.80'],['Flat white','3.50'],['Latte','3.80'],['Espresso','2.50'],['Filter brew','3.00'],['Syrian coffee w/ cardamom','4.50'],['Zhourat','3.20'],['Matcha latte','4.80'],['Hot chocolate','3.80']]);
+const PLATES=L([['Hummus','4.60'],['Labneh','4.00'],['Aubergine tahini','4.80'],['Olives','4.00']]);
+const FLAT=L([["Za'atar",'5.00'],["Za'atar & cheese",'6.00'],['Muhammara','6.50']]);
+const SAND=L([['Falafel bun','8.50'],['Lebanese cauliflower','6.50']]);
+const CROI=L([["Za'atar",'4.00'],['Halloumi','4.50']]);
+const GALLERY=[
+{img:'assets/cake-strawberry.png',cap:'birthday, but make it strawberries',rot:'-2deg'},
+{img:'assets/flatbread.png',cap:'fresh from the oven',rot:'1.5deg'},
+{img:'assets/salad-lentil.png',cap:'made to share',rot:'-1deg'},
+{img:'assets/cake-pink.png',cap:'pulled-sugar ribbons',rot:'2deg'},
+{img:'assets/coffee-cake.png',cap:'cake o\'clock, every day',rot:'-1.5deg'},
+{img:'assets/sign-mint.png',cap:'see you at the market!',rot:'1deg'}];
+const CAKES=[
+{name:'Celebration cakes',desc:'Soft sponge, whipped cream and fresh fruit. Any size, any message.',img:'assets/cake-strawberry.png',rot:'-1.5deg'},
+{name:'Sugar-art cakes',desc:'Hand-pulled sugar and painted details, designed with you.',img:'assets/cake-pink.png',rot:'1deg'},
+{name:'Sheet & party cakes',desc:'Easy to slice for offices, schools and big families.',img:'assets/cake-jam.png',rot:'-.5deg'},
+{name:'Cupcake boxes',desc:'6, 12 or 24 — piped and finished in your colours.',img:'assets/cupcakes.png',rot:'1.5deg'},
+{name:'Iced biscuits',desc:'Names, messages or your logo, iced by hand.',img:'assets/biscuits.png',rot:'-1deg'},
+{name:'Syrian sweet trays',desc:'Maamoul, ghraybeh and pistachio sweets for Eid and guests.',ph:'photo — maamoul / sweets tray',rot:'.5deg'}];
+const STEPS=[{n:'1',t:'Tell us your idea',d:'Use the planner below, call, or pop into the shop.',tone:'#E79CBC'},{n:'2',t:'We talk it through',d:'Ideas, a sketch if it helps, and a quote within two days.',tone:'#BFE3D3'},{n:'3',t:'Lock in your date',d:"Happy? We pencil you in and start planning.",tone:'#F3D9A4'},{n:'4',t:'Collect & celebrate',d:'Pick up from Mansfield Road, boxed and ready.',tone:'#FFF8F1'}];
+const FAQS=[{q:'How much notice do you need?',a:'Ideally two weeks for celebration cakes, a few days for cupcakes and biscuits. Ask anyway — we always try!'},{q:'Vegan, gluten-free or nut-free?',a:"Lots of cakes can be adapted. Tell us about allergies and we'll be honest about what we can do safely."},{q:'How much will it cost?',a:"Every cake is quoted personally — size, design and flavour all play a part. You'll always know before you confirm."},{q:'Do you deliver?',a:'Cakes are collected from the shop. For bigger orders, local delivery may be possible.'}];
+const FLAVOURS=['Vanilla','Chocolate','Pistachio','Cardamom & orange','Rose & pistachio','Lemon','Strawberry','Tahini caramel','Orange blossom'];
+const EVENTS=[
+{d:'31',m:'OCT',t:'Halloween dress-up & sweet treats',meta:'Sat · 5–7pm · all ages',bg:'#232A27',fg:'#FFF8F1',acc:'#E79CBC',rot:'-2deg',cta:'Come in costume!'},
+{d:'14',m:'NOV',t:'The Brunch Series',meta:'Sat · 10am–1pm · booking needed',bg:'#E79CBC',fg:'#232A27',acc:'#FFF8F1',rot:'1.5deg',cta:'Save me a seat'},
+{d:'05',m:'DEC',t:'Christmas cookie decorating',meta:'Sat · 2–4pm · 8 places',bg:'#BFE3D3',fg:'#232A27',acc:'#232A27',rot:'-1deg',cta:'Register interest'}];
+const WORKSHOPS=[
+{name:'Cookie decorating',meta:'2 hrs · up to 8',desc:'Ice and decorate a box of biscuits to take home.',img:'assets/biscuits.png',tone:'#E79CBC'},
+{name:'Maamoul making',meta:'2½ hrs · up to 8',desc:'Shape and fill the date and nut biscuits we bake for Eid.',ph:'photo — maamoul',tone:'#F3D9A4'},
+{name:'Kids\u2019 cupcake club',meta:'90 mins · ages 6–12',desc:'Piping, sprinkles and a lot of fun after school.',img:'assets/cupcakes.png',tone:'#BFE3D3'},
+{name:'Private groups',meta:'any date · 6–12',desc:'Birthdays, hen parties and team days around our table.',img:'assets/cafe-moment.png',tone:'#FFF8F1'}];
+const SCRAPS=[{img:'assets/coffee-cake.png',cap:'our pistachio cake',rot:'-4deg'},{img:'assets/print-arabic.png',cap:'the print by the window',rot:'3deg'},{img:'assets/shelf.png',cap:'jars from home',rot:'-2deg'},{img:'assets/owner.png',cap:'hello from behind the counter!',rot:'4deg'}];
+const VALUES=[{t:'Made here, every morning',d:'If it is on the counter, we baked it.',tone:'#E79CBC'},{t:'Syrian at heart',d:'Pistachio, rose, cardamom, za\u2019atar — flavours from home.',tone:'#BFE3D3'},{t:'A table for everyone',d:'Families, friends and students (10% off, every day).',tone:'#F3D9A4'}];
+const TYPES=['Celebration cake','Catering / event','Workshop','General'];
+const OCC=['Birthday','Wedding','Eid','Baby shower','Corporate','Just because'];
+const SERV=['10','20','40','60+'];
+const FLAV=['Pistachio & rose','Vanilla & strawberry','Chocolate & tahini','Cardamom & orange'];
+const WS=['Cookie decorating','Maamoul making','Kids\u2019 cupcake club','Private group'];
+const CATER=[{name:'Sharing platters',desc:'Savoury platters with fresh flatbread, ready to serve.',img:'assets/flatbread.png',tone:'#BFE3D3'},{name:'Sweet platters',desc:'Iced biscuits and Syrian sweets, boxed or on platters.',img:'assets/biscuits.png',tone:'#F3D9A4'},{name:'Cakes for the table',desc:'A centrepiece cake or cupcakes, designed with you.',img:'assets/cake-strawberry.png',tone:'#E79CBC'},{name:'Eid & Ramadan boxes',desc:'Gift boxes and iftar platters for family and friends.',img:'assets/cupcakes.png',tone:'#FFFFFF'}];
+const CATER_FOR=[{t:'Office lunches'},{t:'Family gatherings'},{t:'Community events'},{t:'Weddings & engagements'}];
+const CATER_STEPS=[{n:'1',t:'Tell us the basics',d:'Date, number of guests and the kind of event.',tone:'#BFE3D3'},{n:'2',t:'We suggest a spread',d:'Ideas and a personal quote within two working days.',tone:'#F3D9A4'},{n:'3',t:'Lock it in',d:'Fine-tune the details and secure your date.',tone:'#E79CBC'},{n:'4',t:'Collect or delivery',d:'Pick up on Mansfield Road or we deliver across Nottingham.',tone:'#FFFFFF'}];
+const CATER_FAQS=[{q:'How much notice?',a:'About a week for most orders; two to three weeks for big events.'},{q:'Minimum order?',a:'We cater from ten guests upwards.'},{q:'Dietary needs?',a:'Everything is vegetarian. Vegan and nut-free on request.'},{q:'Do you deliver?',a:'Yes — across Nottingham, or collect from the shop.'}];
+const CTYPES=['Office lunch','Family gathering','Celebration','Community event','Eid / Ramadan'];
+class Component extends DCLogic {
+  state={sel:{home:'Celebration cake',occ:'Birthday',serv:'20',flav:'Pistachio & rose',ws:'Cookie decorating',mhome:'Celebration cake',mocc:'Birthday',cat:'Office lunch'},sent:{}};
+  chips(g,list,fmt){const cur=this.state.sel[g];return list.map(l=>({label:fmt?fmt(l):l,...(l===cur?{bg:'#232A27',fg:'#fff',bd:'#232A27'}:{bg:'#fff',fg:'#232A27',bd:'#232A27'}),onClick:()=>this.setState(s=>({sel:{...s.sel,[g]:l}}))}));}
+  form(g){const sent=!!this.state.sent[g];return {[g+'Open']:!sent,[g+'Sent']:sent,[g+'Send']:()=>this.setState(s=>({sent:{...s.sent,[g]:true}})),[g+'Reset']:()=>this.setState(s=>({sent:{...s.sent,[g]:false}}))};}
+  pageVals(){const p=this.props.page;const show={};for(let i=1;i<=10;i++){show["C"+i]=!p||p==="C"+i;}return {show,chrome:!p,pad:p?"0":"40px 44px 32px"};}
+  renderVals(){
+    const s=this.state.sel;
+    return {...this.pageVals(),arabic:this.props.showArabic??true,
+      offers:OFFERS,coffee:COFFEE,plates:PLATES,flat:FLAT,sand:SAND,croi:CROI,gallery:GALLERY,coffeeShort:COFFEE.slice(0,6),
+      cakeTypes:CAKES.map(c=>({...c,img:c.img||null,ph:c.ph||null})),cakeTypesShort:CAKES.slice(0,4),steps:STEPS,faqs:FAQS,flavours:FLAVOURS,
+      events:EVENTS,nextEvents:EVENTS.slice(0,2),workshops:WORKSHOPS.map(w=>({...w,img:w.img||null,ph:w.ph||null})),scraps:SCRAPS,values:VALUES,
+      homeChips:this.chips('home',TYPES),mhomeChips:this.chips('mhome',TYPES),occChips:this.chips('occ',OCC),moccChips:this.chips('mocc',OCC),
+      servChips:this.chips('serv',SERV,v=>v==='60+'?'60+':v+' people'),flavChips:this.chips('flav',FLAV),wsChips:this.chips('ws',WS),
+      homeType:s.home.toLowerCase(),wsType:s.ws.toLowerCase(),cater:CATER,caterFor:CATER_FOR,caterSteps:CATER_STEPS,caterFaqs:CATER_FAQS,catChips:this.chips('cat',CTYPES),catType:s.cat.toLowerCase(),scrapsShort:SCRAPS.slice(0,2),...this.form('cat'),
+      cSummary:`A ${s.occ==='Just because'?'just-because':s.occ.toLowerCase()} cake for ${s.serv} people — ${s.flav.toLowerCase()}.`,
+      ...this.form('home'),...this.form('c'),...this.form('ws'),...this.form('mhome')};
+  }
+}
+</script>
+</body>
+</html>
