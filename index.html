@@ -10,25 +10,20 @@
 <helmet><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Patrick+Hand&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet"><style>body{margin:0;background:#EFECE7}a{color:inherit;text-decoration:none}a:hover{opacity:.85}</style></helmet>
 <div style="min-height:100vh;display:flex;flex-direction:column;font-family:'Instrument Sans',sans-serif;color:#1F1F1D;background:#EFECE7">
 <div style="position:sticky;top:0;z-index:50;background:#1F1F1D;color:#F4F1EC;box-shadow:0 2px 12px rgba(0,0,0,.18)">
-<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 32px;padding:14px 24px">
-<div style="display:flex;align-items:center;gap:16px"><div style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:34px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:11px;margin:-4px 0 0 28px;opacity:.8">baked moments · shared stories</span></div><span style="font-size:13px;opacity:.6;border-left:1px solid rgba(255,255,255,.2);padding-left:16px">Website directions · for review</span></div>
-<div style="display:flex;flex-wrap:wrap;gap:6px">
+<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding:{{ barPad }}">
+<div style="display:flex;align-items:center;gap:16px"><div style="display:flex;flex-direction:column;line-height:1"><span style="font-family:Caveat,cursive;font-weight:700;font-size:30px">inbetween</span><span style="font-family:'Patrick Hand',cursive;font-size:10px;margin:-4px 0 0 24px;opacity:.8">baked moments · shared stories</span></div><sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><span style="font-size:13px;opacity:.6;border-left:1px solid rgba(255,255,255,.2);padding-left:16px">Website directions · for review</span></sc-if></div>
+<div style="display:flex;gap:2px;background:rgba(255,255,255,.08);border-radius:40px;padding:3px;order:{{ devOrder }}">
+<sc-for list="{{ devices }}" as="v" hint-placeholder-count="2"><button type="button" onClick="{{ v.onClick }}" style="background:{{ v.bg }};color:{{ v.fg }};border:0;border-radius:40px;padding:8px 16px;font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer">{{ v.label }}</button></sc-for>
+</div>
+<div style="display:flex;gap:6px;flex:{{ dirFlex }};min-width:0;overflow-x:auto;scrollbar-width:none;order:{{ dirOrder }}">
 <sc-for list="{{ dirs }}" as="d" hint-placeholder-count="3">
-<button type="button" onClick="{{ d.onClick }}" style="display:flex;align-items:center;gap:10px;background:{{ d.bg }};color:{{ d.fg }};border:1px solid {{ d.bd }};border-radius:40px;padding:8px 16px 8px 8px;font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer"><span style="display:flex"><sc-for list="{{ d.sw }}" as="c"><span style="width:18px;height:18px;border-radius:50%;background:{{ c }};border:1.5px solid #1F1F1D;margin-right:-5px"></span></sc-for></span><span style="margin-left:6px">{{ d.label }}</span></button>
+<button type="button" onClick="{{ d.onClick }}" style="flex:none;display:flex;align-items:center;gap:8px;background:{{ d.bg }};color:{{ d.fg }};border:1px solid {{ d.bd }};border-radius:40px;padding:7px 14px 7px 7px;font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap"><span style="display:flex"><sc-for list="{{ d.sw }}" as="c"><span style="width:16px;height:16px;border-radius:50%;background:{{ c }};border:1.5px solid #1F1F1D;margin-right:-5px"></span></sc-for></span><span style="margin-left:6px">{{ d.label }}</span></button>
 </sc-for>
 </div>
 </div>
-<div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 24px;padding:0 24px;border-top:1px solid rgba(255,255,255,.1)">
-<div style="display:flex;flex-wrap:wrap;gap:4px">
-<sc-for list="{{ pages }}" as="p" hint-placeholder-count="4"><button type="button" onClick="{{ p.onClick }}" style="background:none;border:0;border-bottom:2px solid {{ p.bd }};color:{{ p.fg }};padding:14px 12px 12px;font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer">{{ p.label }}</button></sc-for>
 </div>
-<div style="display:flex;gap:2px;background:rgba(255,255,255,.08);border-radius:40px;padding:3px">
-<sc-for list="{{ devices }}" as="v" hint-placeholder-count="2"><button type="button" onClick="{{ v.onClick }}" style="background:{{ v.bg }};color:{{ v.fg }};border:0;border-radius:40px;padding:7px 16px;font-family:'Instrument Sans',sans-serif;font-size:13px;font-weight:600;cursor:pointer">{{ v.label }}</button></sc-for>
-</div>
-</div>
-</div>
-<div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding:16px 24px 0;font-size:13px;line-height:1.5;color:#5B5852"><span><strong style="color:#1F1F1D">{{ dirName }}</strong> — {{ dirDesc }}</span><span>Tip: links and buttons inside the designs work too.</span></div>
-<div ref="{{ stageRef }}" onClickCapture="{{ onNav }}" style="flex:1;padding:16px 24px 64px;display:flex;justify-content:center;align-items:flex-start;min-width:0">
+<sc-if value="{{ wide }}" hint-placeholder-val="{{ true }}"><div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding:16px 24px 0;font-size:13px;line-height:1.5;color:#5B5852"><span><strong style="color:#1F1F1D">{{ dirName }}</strong> — {{ dirDesc }}</span><span>Use the site's own navigation to move between pages.</span></div></sc-if>
+<div ref="{{ stageRef }}" onClickCapture="{{ onNav }}" style="flex:1;padding:{{ stagePad }};display:flex;justify-content:center;align-items:flex-start;min-width:0">
 <sc-if value="{{ showDesign }}" hint-placeholder-val="{{ true }}">
 <div style="zoom:{{ zoom }};flex:none">
 <sc-if value="{{ isA }}" hint-placeholder-val="{{ true }}"><dc-import name="InBetween-A-Shopfront" page="{{ pageId }}" hint-size="1282px,900px"></dc-import></sc-if>
@@ -36,39 +31,38 @@
 <sc-if value="{{ isC }}" hint-placeholder-val="{{ false }}"><dc-import name="InBetween-C-SharedStories" page="{{ pageId }}" hint-size="1282px,900px"></dc-import></sc-if>
 </div>
 </sc-if>
-<sc-if value="{{ mobileMissing }}" hint-placeholder-val="{{ false }}">
-<div style="margin-top:80px;max-width:420px;text-align:center;display:flex;flex-direction:column;gap:14px;align-items:center"><span style="font-size:20px;font-weight:600">Mobile for this page isn't designed yet</span><span style="font-size:15px;line-height:1.6;color:#5B5852">Home and Cakes to order have mobile versions. This page follows the same pattern once a direction is chosen.</span><button type="button" onClick="{{ toDesktop }}" style="background:#1F1F1D;color:#F4F1EC;border:0;border-radius:40px;padding:12px 22px;font-family:'Instrument Sans',sans-serif;font-size:14px;font-weight:600;cursor:pointer">View desktop instead</button></div>
-</sc-if>
+
 </div>
 </div>
 </x-dc>
 <script type="text/x-dc" data-dc-script>
 const DIRS=[
-{key:'A',label:'A · Shopfront',sw:['#39433F','#BFE0D3','#FAF8F4'],desc:'Faithful to the shop as it is — slate-green frontage, mint menu board, warm white. Calm and classic.'},
-{key:'B',label:'B · Baked Moments',sw:['#CFE5D9','#1F2B26','#F7F3EC'],desc:'Refined and editorial, like a cookbook — soft mint, big serif type, arch-shaped photos.'},
-{key:'C',label:'C · Shared Stories',sw:['#E79CBC','#232A27','#F3D9A4'],desc:'Bold and playful, like the Instagram — biscuit pink, polaroids, chalkboard menu, a 30-second cake planner.'}];
+{key:'A',label:'A · Shopfront',short:'A · Shopfront',sw:['#39433F','#BFE0D3','#FAF8F4'],desc:'Faithful to the shop as it is — slate-green frontage, mint menu board, warm white. Calm and classic.'},
+{key:'B',label:'B · Baked Moments',short:'B · Baked',sw:['#CFE5D9','#1F2B26','#F7F3EC'],desc:'Refined and editorial, like a cookbook — soft mint, big serif type, arch-shaped photos.'},
+{key:'C',label:'C · Shared Stories',short:'C · Stories',sw:['#E79CBC','#232A27','#F3D9A4'],desc:'Bold and playful, like the Instagram — biscuit pink, polaroids, chalkboard menu, a 30-second cake planner.'}];
 const PAGES=['Home','Cakes to order','Catering','Workshops & events','Our story'];
 const FRAMES={desktop:[1,2,7,3,4],mobile:[5,6,8,9,10]};
-const KEY='inbetween-hub-v2';
+const KEY='inbetween-hub-v3';
+const isNarrow=()=>typeof window!=='undefined'&&window.innerWidth<760;
 class Component extends DCLogic {
-  state=(()=>{try{return {dir:'A',page:1,device:'desktop',...JSON.parse(localStorage.getItem(KEY)||'{}'),zoom:1};}catch(e){return {dir:'A',page:1,device:'desktop',zoom:1};}})();
+  state=(()=>{const n=isNarrow();let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||'{}');}catch(e){}return {dir:saved.dir||'A',page:saved.page||1,device:n?'mobile':'desktop',narrow:n,zoom:1};})();
   stageRef=React.createRef();
-  componentDidMount(){this.ro=new ResizeObserver(()=>this.measure());if(this.stageRef.current)this.ro.observe(this.stageRef.current);this.measure();}
-  componentWillUnmount(){this.ro&&this.ro.disconnect();}
-  measure(){const el=this.stageRef.current;if(!el)return;const w=el.clientWidth-48;const z=Math.min(1,Math.max(.25,w/1282));if(Math.abs(z-this.state.zoom)>.005)this.setState({zoom:z});}
-  go(p){this.setState(p,()=>{const {dir,page,device}=this.state;try{localStorage.setItem(KEY,JSON.stringify({dir,page,device}));}catch(e){}window.scrollTo(0,0);});}
+  componentDidMount(){this.onResize=()=>{const n=isNarrow();if(n!==this.state.narrow)this.setState({narrow:n});};window.addEventListener('resize',this.onResize);this.ro=new ResizeObserver(()=>this.measure());if(this.stageRef.current)this.ro.observe(this.stageRef.current);this.measure();}
+  componentWillUnmount(){this.ro&&this.ro.disconnect();window.removeEventListener('resize',this.onResize);}
+  measure(){const el=this.stageRef.current;if(!el)return;const cs=getComputedStyle(el);const w=el.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);const z=Math.min(1,Math.max(.2,w/1282));const mz=Math.min(1,Math.max(.5,w/414));if(Math.abs(z-this.state.zoom)>.005||Math.abs(mz-(this.state.mzoom||1))>.005)this.setState({zoom:z,mzoom:mz});}
+  go(p){this.setState(p,()=>{const {dir,page,device}=this.state;try{localStorage.setItem(KEY,JSON.stringify({dir,page}));}catch(e){}window.scrollTo(0,0);});}
   onNav=(e)=>{const a=e.target.closest&&e.target.closest('a');if(!a)return;const href=a.getAttribute('href')||'';if(!href.startsWith('#'))return;e.preventDefault();const m=href.match(/^#([ABC])(\d+)$/);if(!m)return;const n=+m[2];let i=FRAMES.desktop.indexOf(n);if(i<0)i=FRAMES.mobile.indexOf(n);if(i<0)return;this.go({dir:m[1],page:i+1});};
   renderVals(){
-    const {dir,page,device,zoom}=this.state;const mobile=device==='mobile';const mobileOk=true;
+    const {dir,page,device,zoom,narrow}=this.state;const mzoom=this.state.mzoom||1;const mobile=device==='mobile';
     const pageId=dir+FRAMES[mobile?'mobile':'desktop'][Math.min(page,5)-1];
     const d=DIRS.find(x=>x.key===dir);
     return {
-      dirs:DIRS.map(x=>({...x,...(x.key===dir?{bg:'#F4F1EC',fg:'#1F1F1D',bd:'#F4F1EC'}:{bg:'transparent',fg:'#F4F1EC',bd:'rgba(255,255,255,.25)'}),onClick:()=>this.go({dir:x.key})})),
-      pages:PAGES.map((l,i)=>({label:l,...(i+1===page?{fg:'#fff',bd:'#F4F1EC'}:{fg:'rgba(244,241,236,.6)',bd:'transparent'}),onClick:()=>this.go({page:i+1})})),
+      wide:!narrow,barPad:narrow?'10px 12px':'14px 24px',stagePad:narrow?'12px 8px 40px':'16px 24px 64px',devOrder:narrow?2:3,dirOrder:narrow?3:2,dirFlex:narrow?'1 1 100%':'0 1 auto',
+      dirs:DIRS.map(x=>({...x,label:narrow?x.short:x.label,...(x.key===dir?{bg:'#F4F1EC',fg:'#1F1F1D',bd:'#F4F1EC'}:{bg:'transparent',fg:'#F4F1EC',bd:'rgba(255,255,255,.25)'}),onClick:()=>this.go({dir:x.key})})),
       devices:['desktop','mobile'].map(v=>({label:v==='desktop'?'Desktop':'Mobile',...(v===device?{bg:'#F4F1EC',fg:'#1F1F1D'}:{bg:'transparent',fg:'#F4F1EC'}),onClick:()=>this.go({device:v})})),
       dirName:d.label,dirDesc:d.desc,pageId,isA:dir==='A',isB:dir==='B',isC:dir==='C',
-      showDesign:!mobile||mobileOk,mobileMissing:mobile&&!mobileOk,zoom:mobile?1:zoom,
-      stageRef:this.stageRef,onNav:this.onNav,toDesktop:()=>this.go({device:'desktop'})};
+      showDesign:true,zoom:mobile?mzoom:zoom,
+      stageRef:this.stageRef,onNav:this.onNav};
   }
 }
 </script>
